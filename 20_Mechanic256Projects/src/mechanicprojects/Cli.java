@@ -50,7 +50,7 @@ public class Cli
 
        String befehl = JOptionPane.showInputDialog("Dies ist eine minimalistische CLI, die nur den Befehl <bin> mit drei Parametern kennt.\n "
                + "Sie können die CLI auch mit [Hallo] begrüßem ;] \n "
-               + "Für jeden Befehl werden Berechnungen binärer Zahlen ausgegeben\n "
+               + "Für jeden Befehl werden Berechnungen von Zweierpotenzen ausgegeben\n "
                + "Welchen Befehl möchten Sie eingeben?\n "
                + "bin \n "
                + "bin -a\n "
@@ -63,7 +63,7 @@ public class Cli
                 else if(befehl.equals("bin -a")){JOptionPane.showMessageDialog(null, bina);cliAbfrage();}
                 else if(befehl.equals("bin -b")){JOptionPane.showMessageDialog(null, binb);cliAbfrage();}
                 else if(befehl.equals("bin -z"))
-                {String zahl = JOptionPane.showInputDialog("Geben Sie eine Zahl von 0-11 ein");
+                {String zahl = JOptionPane.showInputDialog("Geben Sie eine Potenz von 0-11 ein");
                  int i = Integer.parseInt(zahl);
                  JOptionPane.showMessageDialog(null, bin[i]);
                  cliAbfrage();
