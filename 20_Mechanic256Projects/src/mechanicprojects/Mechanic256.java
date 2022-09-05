@@ -72,7 +72,7 @@ public class Mechanic256 extends JFrame {
         
 	
 	JLabel lblDescription = new JLabel("Bitte wählen Sie ein Mini-Programm");
-	lblDescription.setBounds(10, 11, 180, 14);
+	lblDescription.setBounds(10, 10, 220, 14);
 	contentPane.add(lblDescription);
 	
         
@@ -82,7 +82,7 @@ public class Mechanic256 extends JFrame {
         btnApp01.setBounds(10, 70, 150, 25);
 	contentPane.add(btnApp01);
         
-        JLabel lblButton01 = new JLabel("Einfache Anzeige von bunten Kachel ");
+        JLabel lblButton01 = new JLabel("Einfache Anzeige von bunten Kacheln ");
 	lblButton01.setBounds(180, 75, 250, 15);
 	contentPane.add(lblButton01);
         
