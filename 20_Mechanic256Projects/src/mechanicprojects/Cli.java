@@ -50,7 +50,7 @@ public class Cli
 
        String befehl = JOptionPane.showInputDialog("Dies ist eine minimalistische CLI, die nur den Befehl <bin> mit drei Parametern kennt.\n "
                + "Sie können die CLI auch mit [Hallo] begrüßem ;] \n "
-               + "Für jeden Befehl wird eine Reihenfolge von binären Multiplikationen ausgegeben\n "
+               + "Für jeden Befehl werden Berechnungen binärer Zahlen ausgegeben\n "
                + "Welchen Befehl möchten Sie eingeben?\n "
                + "bin \n "
                + "bin -a\n "
