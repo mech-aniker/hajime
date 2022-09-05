@@ -1,11 +1,21 @@
 
 This is my first "bigger" project I uploaded on github for application purposes. 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 I summerized some little programs in a menu with explanations
 so the user can navigate back an force through the different programs 
 and is ably to get an idea of my modest coding skills ;)
 
 You just need to compile the file 20_Mechanic256Projects/src/mechanicprojects/Mechanic256.java - It contains the main().
 
+*****************************
+
 Enjoy!
+
+*****************************
+
+JDK 1.8.0_251 (Java 8 or higher)
+NetBeans IDE 8.2 RC
+
 
