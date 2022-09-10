@@ -2,15 +2,12 @@ package mechanicprojects;
 
 import java.awt.Graphics;
 import java.awt.Color;
-import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import static mechanicprojects.Mechanic256.rectangleApp;
 
 public class Rectangle3 
 {
@@ -58,9 +55,6 @@ public class Rectangle3
   }
 }
 
-
-
-
 class MyCanvas extends JComponent 
 {
 
@@ -86,14 +80,14 @@ class MyCanvas extends JComponent
       for (int y=10; y<=388; y+=42) { 
        
 
-        drawRect(palettes[currentPaletteIndex][currentColorIndex], x, y); // Aufrufen die Methode fuer Zeichnen einen Rechteck mit current Farbe (wurde mit currentColorIndex bei Objekt MyCanvas eingestellt)
-        setNextColorIndex(); // Wechseln die Farbe zur naechsten
+        drawRect(palettes[currentPaletteIndex][currentColorIndex], x, y); // Aufrufen der Methode zum Zeichnen eines Rechtecks mit current Farbe (wurde mit currentColorIndex bei Objekt MyCanvas eingestellt)
+        setNextColorIndex(); // Wechseln einer Farbe zur naechsten
       }
-      setNextPalette(); // wechseln wir die Palette bei jeder neuer Spalte
+      setNextPalette(); // wechseln de Palette bei jeder neuen Spalte
     }  
   } 
 
-  /* Zeichnen einen Rechteck mit bestimmter Farbe und Position */
+  /* Zeichnen des Rechtecks mit einer bestimmten Farbe und Position */
   private void drawRect(Color color, int positionX, int positionY) 
   {
     int width = 40;
@@ -103,7 +97,7 @@ class MyCanvas extends JComponent
     currentGraphics.fillRect(positionX, positionY, width, height);
   }
 
-  /* Wechseln die Farbenindex in Palette */
+  // Wechseln des Farbenindex in der Palette
   private void setNextColorIndex() 
   {
     if(this.currentColorIndex >= this.palettes[currentPaletteIndex].length - 1) {this.currentColorIndex = 0;}
@@ -111,7 +105,7 @@ class MyCanvas extends JComponent
     else {this.currentColorIndex++;}
   }
 
-  /* Wechseln die Palettenindex */
+  // Wechseln des Palettenindex
   public void setNextPalette() 
   {
     if(this.currentPaletteIndex >= this.palettes.length - 1) {this.currentPaletteIndex = 0;}
