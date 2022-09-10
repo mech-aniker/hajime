@@ -25,8 +25,7 @@ public class Rectangle3
 
     window.getContentPane().add(new MyCanvas());
     
-    int integer =0;
-    
+   
     JOptionPane.showMessageDialog(null, "Vorsicht! Diese App bildet einfach nur bunte Kacheln ab, die schön anzusehen sind...\n "
                 +  " Vielleicht möchten Sie sich schon einmal auf ein Gefühl leichter Enttäuschng einstellen? :)\n ");
     
@@ -78,8 +77,6 @@ class MyCanvas extends JComponent
     //Color myWhite = new Color(255, 255, 255);
     for (int x=10; x<=388; x+=42) {
       for (int y=10; y<=388; y+=42) { 
-       
-
         drawRect(palettes[currentPaletteIndex][currentColorIndex], x, y); // Aufrufen der Methode zum Zeichnen eines Rechtecks mit current Farbe (wurde mit currentColorIndex bei Objekt MyCanvas eingestellt)
         setNextColorIndex(); // Wechseln einer Farbe zur naechsten
       }
@@ -92,7 +89,6 @@ class MyCanvas extends JComponent
   {
     int width = 40;
     int height = 40;
-
     currentGraphics.setColor(color);
     currentGraphics.fillRect(positionX, positionY, width, height);
   }
@@ -101,7 +97,6 @@ class MyCanvas extends JComponent
   private void setNextColorIndex() 
   {
     if(this.currentColorIndex >= this.palettes[currentPaletteIndex].length - 1) {this.currentColorIndex = 0;}
-    
     else {this.currentColorIndex++;}
   }
 
@@ -109,9 +104,7 @@ class MyCanvas extends JComponent
   public void setNextPalette() 
   {
     if(this.currentPaletteIndex >= this.palettes.length - 1) {this.currentPaletteIndex = 0;}
-    
     else {this.currentPaletteIndex++;}
-    
     this.currentColorIndex = 0;    
   }
 }
